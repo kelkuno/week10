@@ -1,0 +1,31 @@
+html {
+    background-color: lime;
+}
+body {
+    margin: auto;
+    width: 800px;
+}
+h1, h2 {
+    text-align: center;
+}
+.key {
+    background-color: hotpink;
+}
+/* table styling ****************/
+
+.header-row {
+    display: flex;
+}
+th {
+    background-color: black;
+    color: lime;
+}
+th, td {
+    flex: 1;
+    border: solid black 2px;
+    margin: 1em;
+    padding: 1em;
+}
+tr {
+    display: flex;
+}
