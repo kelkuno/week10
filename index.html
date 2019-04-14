@@ -14,6 +14,7 @@
                         <th>name</th>
                         <th>age</th>
                         <th>care</th>
+                        <th>get rid of me</th>
                     </div>
                 </thead>
                 <tbody>
@@ -22,6 +23,7 @@
                         <td>{{plant.name}}</td>
                         <td>{{plant.age}}</td>
                         <td>{{plant.care}}</td>
+                        <td><button type="button" v-on:click="deletePlant(plant)">delete</button></td>
                     </tr>
                 </tbody>
             </table>
