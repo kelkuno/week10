@@ -35,7 +35,11 @@ var housePlants = [
 var myVue = new Vue({
     el: "#myApp",
     data: {
-      plants: housePlants
+      plants: housePlants,
+      nameInput: "",
+      ageInput: "",
+      careInput: "",
+      idInput: ""
     },
     methods: {
         deletePlant: function (plantObject){
@@ -47,6 +51,16 @@ var myVue = new Vue({
                 return false;
                 }
             });
+        },
+        addPlant: function (){
+            let newPlant = {
+                name: this.nameInput,
+                age: this.ageInput, 
+                care: this.careInput,
+                id: this.idInput
+            };
+            this.plants.push(newPlant);
+            this.nameInput = this.ageInput = this.careInput = this.idInput = "";
         }
     }
     });
