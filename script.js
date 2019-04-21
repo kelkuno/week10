@@ -42,6 +42,7 @@ var myVue = new Vue({
       idInput: ""
     },
     methods: {
+        /* delete plant function for this week
         deletePlant: function (plantObject){
             this.plants = this.plants.filter(function 
                 (plant){
@@ -51,7 +52,7 @@ var myVue = new Vue({
                 return false;
                 }
             });
-        },
+        },*/
         addPlant: function (){
             let newPlant = {
                 name: this.nameInput,
