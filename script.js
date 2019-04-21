@@ -3,9 +3,10 @@ Assignent 12
 
 ______________________________*/
 Vue.component('plants-component', {
-    props: ['name', 'age', 'care', 'id'],
+    props: ['name', 'age', 'care', 'id', 'pic'],
     template: `
         <tr>
+            <td>{{pic}}</td>
             <td>{{name}}</td>
             <td>{{age}}</td>
             <td>{{care}}</td>
@@ -20,7 +21,8 @@ var housePlants = [
         name: "pothos",
         age: 7,
         care: "water when plant looks less perky",
-        id: 11
+        id: 11,
+        pic: "pics/pothos.jpeg"
     }, {
         name: "money tree",
         age: 2,

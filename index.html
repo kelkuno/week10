@@ -11,6 +11,7 @@
             <table>
                 <thead>
                     <div class="header-row">
+                        <th>image</th>
                         <th>name</th>
                         <th>age</th>
                         <th>care</th>
@@ -20,6 +21,7 @@
                     <tr is="plants-component"
                     v-for="plant in plants"
                         :class="{key: plant.age>6}"
+                        :pic="plant.pic"
                         :name="plant.name"
                         :age="plant.age"
                         :care="plant.care"></tr>
