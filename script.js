@@ -57,7 +57,8 @@ var myVue = new Vue({
       nameInput: "",
       ageInput: "",
       careInput: "",
-      idInput: ""
+      idInput: "",
+      picInput: ""
     },
     methods: {
         /* delete plant function for this week
@@ -73,13 +74,14 @@ var myVue = new Vue({
         },*/
         addPlant: function (){
             let newPlant = {
+                pic: this.picInput,
                 name: this.nameInput,
                 age: this.ageInput, 
                 care: this.careInput,
                 id: this.idInput
             };
             this.plants.push(newPlant);
-            this.nameInput = this.ageInput = this.careInput = this.idInput = "";
+            this.picInput=this.nameInput = this.ageInput = this.careInput = this.idInput = "";
         }
     }
     });
