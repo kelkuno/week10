@@ -1,7 +1,19 @@
 /* ----------------------------------
-Assignent 10
+Assignent 12
 
 ______________________________*/
+Vue.component('plants-component', {
+    props: ['name', 'age', 'care', 'id'],
+    template: `
+        <tr>
+            <td>{{name}}</td>
+            <td>{{age}}</td>
+            <td>{{care}}</td>
+        </tr>
+    `
+
+});
+
 
 var housePlants = [
     {
